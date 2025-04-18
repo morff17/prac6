@@ -24,13 +24,15 @@
 
 1. Клонируйте репозиторий:
    ```
-   git clone <https://github.com/Sopirm/Pract6>
-   cd Pract_6
+   git clone <https://github.com/morff17/prac6>
+   cd prac6
    ```
 
 2. Установите зависимости:
    ```
    npm install
+   npm install express cookie-parser
+   
    ```
 
 3. Запустите сервер:
@@ -45,6 +47,6 @@
 
 4. Откройте приложение в браузере:
    ```
-   http://localhost:3000
+   http://localhost:5000
    ```
 
