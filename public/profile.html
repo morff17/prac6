@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container profile-container">
+    <header class="profile-header">
+        <h1>Личный кабинет</h1>
+        <div class="theme-toggle">
+            <span>Тема:</span>
+            <button id="theme-toggle-btn" class="btn">Сменить тему</button>
+        </div>
+        <button id="logout-btn" class="btn logout-btn">Выйти</button>
+    </header>
+
+    <div class="profile-content">
+        <div class="user-info">
+            <h2>Информация о пользователе</h2>
+            <p>Имя пользователя: <span id="username-display"></span></p>
+            <p>Текущая тема: <span id="current-theme"></span></p>
+        </div>
+
+        <div class="data-section">
+            <h2>Данные (с кэшированием)</h2>
+            <div class="data-info">
+                <p>Статус кэша: <span id="cache-status"></span></p>
+                <p>Время кэширования: <span id="cache-time"></span></p>
+            </div>
+            <button id="refresh-data-btn" class="btn">Обновить данные</button>
+            <div id="data-container" class="data-container"></div>
+        </div>
+    </div>
+</div>
+
+<script src="profile.js"></script>
+</body>
+</html>
